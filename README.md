@@ -13,7 +13,7 @@ $ pip3 install setuptools
 
 ### Install logagg-utils
 ```bash=
-pip3 install git+https://github.com/supriyopaul/logagg_utils.git
+pip3 install git+https://github.com/deepcompute/logagg-utils.git
 ```
 #### Check installation
 ```bash=
