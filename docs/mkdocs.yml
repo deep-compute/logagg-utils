@@ -1,0 +1,7 @@
+site_name: logagg-utils
+nav:
+        - Overview: index.md
+        - Utils: utils.md
+        - NSQSender: nsqsender.md
+
+theme: readthedocs
