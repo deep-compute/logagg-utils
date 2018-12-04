@@ -23,5 +23,4 @@ pip3 freeze | grep logagg-utils
 ```python=
 >>> from logagg_utils import utils
 ```
-#### Read full documentation
-[logagg-utils](https://deep-compute.github.io/logagg-utils/)
+#### [Read full documentation](https://deep-compute.github.io/logagg-utils/)
