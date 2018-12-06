@@ -12,24 +12,12 @@ script:
 - python setup.py test
 
 deploy:
-
-  - provider: releases
-    skip_cleanup: true
-    api-key:
-        secure: Lkho+GsAQS2UbWWWFaPLitXY7i0fte3X+xbpQip9F/unDPc8+0tt5Ss1YN/gQRZlnlSqr748yV5dQS++L8VJsYewA7L4VUYtlAeGLi7F1eDWMU19Fwdko0yknh+9GTS7xsMnwWm9ylv21Jzsf8rRXCLWdm2UAWuuiaJvgnuuxiL+c9xQJFtMULfzhAfcfiYNoTxfCRQzZ8jhxsvMbwyi7gEXI0W60XS9MRMQ1Jvm0iImlRjN6CusdIBiP402n3YgBoKENHXgwrxUOA2Tf7/r8y2u0N8/3YxO+QZdbp84JjxTH/QSvm+06ZNxRqaR4ccYdksa7f9Iyv82xjREtAZYsbgqPF10ArwRAneLxi/g9xrCGHzMOhPTXMuaCyqgO6u4hIrk7noUSOqN4ybUum6+SabqJJdtUZyoJzfBTRuqE9fGyXbyAOTV1ySkozwGW1q2a8LbSTuEibNMOfr5iJ7P2IbpDiV6IfjJJ28O7VeGkQCRw5/1iKYWwoKwrsj9aXT0RtEUcZgDR07KVEeHPq75SoW6PhTAadWGiAKSqHK2PBqP4tfztS1/mseVodvD7pZRkNzGP1GCP525GCOy/CynKLSUHWHDvsOJ4GwnuRhpxTz4hHOvwFK8Usx4W2M6YyrUuAA68/Ldvf9FI/llrzdURpCm6fosTIrAeJlLj4X/0zQ=
-    name: logagg-utils-0.5.0
-    tag_name: 0.5.0
-    on:
-        branch: master
-        repo: deep-compute/logagg-utils
-
-  - provider: pypi
-    distributions: "sdist bdist_wheel"
-    skip_cleanup: true
-    user: "deepcompute"
-    password:
-        secure: sAdZw4fsRn1s0Km9YNTuTl/2S4geL5ZErNTqFvJLRIqm5jvpfCv4qjG3jo05XZp4YhxmuYIPlXJALTYNHVbq2i3gO2mmy43PhDIADxPXMdDmKu+hqvXQK4BCMfxxphXHR1zh13AM7KJ2LO+4DDx8AVQvAsXgeDjQQp82NYM8eH12a5AXJdocQOCNvpD4k/1nCc+7JrHjdraAAlAUBPfT9lsYbZm5X8Hna35rxA39ocFs5Ud2nvaxS75J+LGR1yBbp3PXGmcaIw6m4h3jHMiCaETvqkoLfyFlE+6FgqoCT/LDDbhrea/x/CI0LlUrFcAulZu/8PTdscqbB43pRHkRjktJlFgWhpGx2Xs5PmdUpCsEOH7iPjGI+CrtP5ERFK54Pth9BBAfFT0A6FZRWPGj3DDKFWKpEbQ1ldQtv2v7gG59vVTjuIJSaI02sfMVIWeWrClsaTU5uvU17iv7iKywvXXrFOqnNns/yz2CzSXJBhFWSr+v6yBDzo5+BJeRbBYDtWSScFjTHYWSroFWpsswngp1MOcDfa8xzYicBABakCtbEvREYMbazx7AxZGV5SOlRiyzU5AI6MesyJyEN7QsMypybHbjmqMuvPd011wBuZ0Z/0OxMT1r0tnxr1VvX5EwjwrGzeYEzjBKGd+TuQNMxq6l5Y9thuorv326DgRjtiQ=
-    on:
-      branch: master
-      # only when there is a release it will update pypi
-      tags: true
+- provider: releases
+  skip_cleanup: true
+  api_key:
+    secure: lATqIhtOVTlRw7hfHiXh02+2Rk+d9yQ6xcCFF5gezfCZ8tbCP7Opc+GR7ue61MHa63e9VEslolFltDkoOb0I/sS+NWISymZw2rooYkalRoIYYUJVZyRX8I+mgX8bzFAdBEfaf1cEBqdzUOvATIySsQX+s8CkLfpr/YKXFXXRfg/uSKR4Cb3hChrLChErLsl3KAlrxIoW59TS62jbyyrgKZerTni86dN0rG9DAr8xBwWO86cssfk8x2+S9BXUV6BBNs8uCZABD2Hb5342P6LptetLllN8NBO8T+SQIxKaSHj8ySyV2xm0U0XPkUHkVdg9iEMEi/8k60fw6l3ywgZGzHkxvVjgLbfDXsYCybHlgaabDoZZNejS4Uz7W9Y0jobU+vqWlIO6KcQ9rWYCaueDvMR0zaYUGn23XKrC6VjFuGXGPbVZhckssS9IP/Pljz4t/FxQgQ05Ob65mA2JfUWoM/I83tdFv3OMB0dGDQOMZNgOU0O+nuIZ2fZGRQoHuA8lMnlpeVHlrHwfjMiSC+BmKhODdg1EOTFjO8ThiusYvQW1Xc2DsxqFr7CDYtiJQphcw5nxXPA0sVS1VYhk/okrwDSb3Q7iUt+spsvYmbWGqzjEcEbY5Y+zycHHZQjeeIsiVhkJnXAPmZY0U9HAKrZbUR/rOM9SqOCs8v0D+bJxkYU=
+  name: logagg-utils-0.5.0
+  tag_name: 0.5.0
+  on:
+    branch: master
+    repo: deep-compute/logagg-utils
