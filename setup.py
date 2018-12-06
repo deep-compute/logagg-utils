@@ -2,7 +2,7 @@ from setuptools import setup
 from setuptools import find_packages
 setup(
     name='logagg_utils',
-    version='0.5.0',
+    version='0.5.2',
     description='Commonly re-used logic for loggag kept in one library',
     keywords='logagg-utils',
     author='Deep Compute, LLC',
