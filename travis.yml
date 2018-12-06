@@ -26,7 +26,7 @@ deploy:
   - provider: pypi
     distributions: "sdist bdist_wheel"
     skip_cleanup: true
-    user: "supriyopaul"
+    user: "deepcompute"
     password:
         secure: "W1S8ZTPZ4T3onLYRIoXdOGLPL1fLTIang4DU28eGSHiPeDtv4Vj7HCs5ykPuTLuczU77Ry+phnxYznV0hcA+mYTlgyrVEbi62K+BZjLKLt86+KzJzhiivSRQL7YbYXGBoQte2DCNk3g6bytdHfWvx3wL/mj0gJ8wePJ83xeoiC4+TgsDvChFvNnMz2nv6yuQkcV9j1kX8A9Jto91ZFvksXc4qGI/VtB+Cah7K1M8lPYaVmyf1Gft1bRRbl4+RR+SQXTpa6GbzZzWMCiRC6Pcs2LrzYVoIblAKBXzOQ35+QL8Uj82pkXPZaBfMwXZET8vtpLvwyk0Nn34vAeX6pt5YSHsM5/CvUlQXHCiDFKJ+p57HSxHF70hak0qnFfh7g7hS7X37d5wnVTZruG9GCJStNYE2XB1JA3xgZsownjHrjVrG7azvS/Ia2kXi0/XG45OJj2cU6AgoioUIksMxAzzK3qmkUXUmXztSRp79Hz2Vi6FjBBw7Um3OZHluXAGvRugfFQju49HDT5KCr+RkFD59sZzOEBnFwbXHI/2QbtoA5D4bOWzjDg7L0XcGhACvwSVXKuMe8in5e6Z+09zUYJb/qJS9AhkXvahYIFx+4jvRH5nK0YCmNgdof3KrytAoE8BiyKLwmkZ93J/o70ZxETnnd2Jo/s7HebncKMNZJlpWmA="
     on:
