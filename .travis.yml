@@ -1,6 +1,6 @@
 language: python
 python:
-- '3.6.5'
+- '2.7'
 
 sudo: required
 
@@ -12,11 +12,24 @@ script:
 - python setup.py test
 
 deploy:
-  provider: releases
-  skip_cleanup: true 
-  api_key:
-    secure: qWehvGexP/5KkYNaPNl+HrI4jMEvB+3Odn0zNZYkZYNBtoc/wx+9fNwNcuhzfetgSh4yjKMDs7J9snoANC+j9rlpAgRWQYgA4znxHv7w7wcDvN+ZPxFvcNUpWanfs+0EO3iUJeZO3arqJseYhP3Od4YnakOpInVeCB2oKxJQ4T3QS6yVHWUzsbrBMSdW6R36VHFVmiTPf0VHHCWo0UJt9xXjXlqPwbdO778GJ2UvUypjpXLubQAJaBXZy6Kj0ixDOURGsWOU3dXf9Vx52YYA1ITvj9DFML2IWk6Mroc9suR3C6E7a7Cf2cyZYXXR88hQ+USc+F76pNtW4nYxj7IXYIckxTs4GvXIb4/yKFYhsVDRbDGlbfHpHTpLFy/N+L26Q7Ypo1IHV+t8XuSVo29sZrC4L/KI4f+dVAGbwsLPGYyDoU6BJ0IPc1h77dDhUZFjQnafQu7HrXqLehfb2b8VH76s9vRJzMEqd/1Lc4ET50pfL90VdAQWyaqeabd+Z99QAwNOCjg/0CQLY6MnDzLtcn4ceIspsmCJQqGpEtS9P/U/ZgnjSouULaRkwrJxksjgN00Tc7bdnRTI+L8dHPt0ekhl3EgCjeSylkkPZat3NWOcYhX/ilExHPRb6qOcrnvi0Au4lXZHjaZRX3tAuhY55H78CVGstTEbNEg45G9ebdM=
-  name: logagg-utils-0.5.0
-  tag_name: 0.5.0
-  on:
-    repo: deep-compute/logagg-utils
+
+  - provider: releases
+    skip_cleanup: true
+    api-key:
+        secure: WCr7oX1taRDJMX29Fi64iVheAySAFOgz1JDrDmCscHOhXD2hGkyIri5oZDO0fZyXHHKaZmTwZ1/FWPIfFfCHmYmeN68D5abhXnpG/EU2tgwCdKRxPle1zZIyoGPyGDKu4id/GNXuktBJXl9bPdGLaMdzneOUGHcN8m6d4GcDCmDIAxzFhhU/pYkFr00KT1jfhHk6ykft2le1aAsQkRMPr8TEd3VCjLG6/TtsPUTp6f1u2eyoX0ni9PEFzAU2LlGiTMJtIM+K3Vxa/x+JFHnU2vtp8mrwGz4gqNHQ6oJRVexQPEK1WGS+Ck8V/U9ZU2Y8D0JJwefmmIxxux0j0+0swgiWO3wOTt8T2/Ulr1rtUh7VxqhNO1IGMhf04vyweGrt30rxqumrVpCQcfhqQJe3NyksVCD9h+mOud3FCpOWetj2vYaUt0xlC4bIZzowcozDBY8g7opvkaDwysW/6r3dMJGC02755TLwQMbkwSfEvVOeFziCz2H+U7mp2LR+wCdK7abioFoxdcDR+2pNn52e/IqHnpkHS/88Iu0KUlpyEL2+KJvSOVjrc1vQuBZ60o82IvgqCswzwSdzwzymjdECtMUnESfjIL6Q4jRsmHjKk4fk1lp3/fjNQ1j97xQXgyX9wv8wQ2AeDBBP7hPihkXpimNVduT+DxqEy8omFTm8Euo=
+    name: logagg-utils-0.5.0
+    tag_name: 0.5.0
+    on:
+        branch: master
+        repo: deep-compute/logagg-utils
+
+  - provider: pypi
+    distributions: "sdist bdist_wheel"
+    skip_cleanup: true
+    user: "deepcompute"
+    password:
+        secure: "IAqAeVhnVVZUYKHkZvjxhlerajLRNb/EsIJcCEUpJVUbctEuO6K6Hx0VUBZhKQkuvzDOB86LjKcroDFjA2VTvUz7TOuHoA5teac9daiPez3d2uIBoCgzXkdZXIUDTerMsNAj+aYJb+Yxe/XvxIc6xYVEfVd8HCHiIuZrb1YRum5LO1wrTUhG6JBZM9BaGMYrKrt264YzwNBF31yeJakp1Gb/56Da9Dvh2DUeCpKsce9et+C19+lriDcj7/v+Dt1Hlhp64V/xIg/a4YwIfovtgWIkVVJ4tw4n0MNUvx61JBStfaR2KC267/6RGzH5DBKv2UW0HSs6wSXc+2K/K0swB+u07ABBmZs1/Cp+e4g0SDik9zs4aWlhqh3aHh0XeqAFu6hgNofpkh685eFuCNplCs9yxHedwU3qUapKP7SixebRbSAkqKgi4mW1kZWLSJBOVemBdYvX/cS+7Fb+9JrAYsixItG1ak0FKfkRn3sg/YKNH29GU33ObJA1WNorsSMq0uKeo1O2bhYbvaXHMAPiYwDUXjUUilP5KblT1MxlnXxcIN8PDlzZYcFN7JXkUeuH3gj1yPmuXUKC8PUJZ3Nwmf9+dLltaxBMkJwLihenfaoszNVGE58b9hr0UTAPgvCqrpRm828oyNGTuZ7K2CZY3YcpV/GWU/3ME0KLn3jPm2U=" 
+    on:
+      branch: master
+      # only when there is a release it will update pypi
+      tags: true
