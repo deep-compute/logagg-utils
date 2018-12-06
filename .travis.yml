@@ -8,9 +8,8 @@ deploy:
     skip_cleanup: true
     api_key:
       secure: YUf26ENaTNB6HwGZJn/DdfrXjWsUpY/9ZAazFw8bSr1PMqSJ36dhYXLBxIAVODp1naRSzogQDXYe320wcQuVFaSoYlTIa/vSybGtEAbKclrarKruCzFfRO7xHm2XVW0W20f9TM4gYuSq31CNj5et/gCoF4ssF4h8vgDjx7lRxO9nTwa1L1AFimuiDiYtGlbvcpifBwkhkef5U2uLLF9x48IOaW3Attv1INr5HCbEiGhQCr/4WeWHg/WTFtFdX5XdrsoI8fz3PZHtJ3opzXTNk5EmI1ZqqtrDN4x4HcgwTE4PxC2cPM/Sf/UG/h8guPZl4qL+2RICURku1SLC89fLfmDZMrtdvOZoEHx6QzGBzw347xC3hVPGNrY8O1aNfGH/PfWe3Fn5PBhDpb/aCo30sABX6kmrt0a0dzc/jpivdENLA/1CCSSWin6p39cqvrV+VX4uZJl+HljdHV1w6JMlegfFZbWmYBquO7ApLmuTwclmxzbnnCywzzN3OO+yG0xqQjQu5wA3+x724rhxxFT3oHDBTZ9L65unhvKYAlPTOwrT2akgpYRQH4ce29h6P+Yn5EWtkD/PQpqLg0j8gLlC7f4dJChNmY7YFSA7f+WIjfeLsyl3+hWy6iIVuKaR6kUsL6XyIm1HPhkuchet01WyTllFY40/u0rUncs5/OrDhvU=
-    file: ''
-    name: logagg-utils-0.5.1
-    tag_name: 0.5.1
+    name: logagg-utils-0.5.2
+    tag_name: 0.5.2
     on:
       repo: deep-compute/logagg-utils
       branch: master
