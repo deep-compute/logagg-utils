@@ -5,8 +5,8 @@ import unittest
 
 from logagg_utils import utils
 
+
 def suite_maker():
-    suite= unittest.TestSuite()
+    suite = unittest.TestSuite()
     suite.addTests(doctest.DocTestSuite(utils))
     return suite
-
